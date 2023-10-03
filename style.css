@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.game-container {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 700;
+    font-size: 7rem;
+    position: absolute;
+    text-shadow: -15px 5px 20px #ced0d3;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #F9f1cc;
+    text-shadow: 5px 5px 0px #FFB650,
+        10px 10px 0px #FFD662,
+        15px 15px 0px #FF80BF,
+        20px 20px 0px #EF5097,
+        25px 25px 0px #6868AC,
+        30px 30px 0px #90B1E0;
+}
+
+
+p {
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #F9f1cc;
+    text-shadow: 1px 1px 0px #FFB650,
+        2px 2px 0px #FFD662,
+        3px 3px 0px #FF80BF,
+        4px 4px 0px #EF5097,
+        5px 5px 0px #6868AC,
+        6px 6px 0px #90B1E0;
+
+}
+
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+    background-color: #fff;
+    color: #86A8E7;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.cell:hover {
+    background-color: #D16BA5;
+    color: #fff;
+
+}
+
+.status {
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #fff;
+    color: #86A8E7;
+    border: none;
+    border-radius: 5px;
+    width: 96px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #D16BA5;
+    color: #fff;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.score-row span:first-child {
+    flex-basis: 70%;
+}
+
+.score-row span:last-child {
+    flex-basis: 30%;
+}
+
+
+@media (max-width: 750px) {
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 5rem;
+        text-shadow: 2px 2px 0px #FFB650,
+            6px 6px 0px #FFD662,
+            10px 10px 0px #FF80BF,
+            14px 14px 0px #EF5097,
+            17px 17px 0px #6868AC,
+            22px 20px 0px #90B1E0;
+    }
+}
